@@ -31,6 +31,8 @@ set(cvode_SOURCES
   cvode_spils.c
   )
 
+set_property(SOURCE cvode_diag.c PROPERTY SKIP_UNITY_BUILD_INCLUSION TRUE)
+
 # Add variable cvode_HEADERS with the exported CVODE header files
 set(cvode_HEADERS
   cvode.h
